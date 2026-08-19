@@ -108,10 +108,11 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .header-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 24px;
-  height: 76px;
+  height: 88px;
 }
 
 .logo {
@@ -119,7 +120,6 @@ img, svg { display: block; max-width: 100%; }
   align-items: center;
   gap: 10px;
   color: #fff;
-  margin-right: auto;
 }
 .logo-mark { width: 20px; height: 20px; color: var(--accent); }
 .logo-text { display: flex; align-items: baseline; gap: 6px; font-family: var(--font-display); }
@@ -167,25 +167,31 @@ img, svg { display: block; max-width: 100%; }
   position: relative;
   overflow: hidden;
   color: #fff;
-  background:
-    radial-gradient(120% 140% at 8% 15%, #1f8f6f 0%, rgba(31,143,111,0) 42%),
-    radial-gradient(110% 130% at 55% 30%, #e2531d 0%, rgba(226,83,29,0) 55%),
-    linear-gradient(115deg, #123a34 0%, #1c2530 45%, #0b1220 100%);
+  background: #0b1220;
   padding: 84px 0 96px;
 }
 
-.hero-inner { position: relative; }
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-inner { position: relative; z-index: 1; }
 
 .hero-eyebrow {
   display: flex;
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
-  font-size: 0.82rem;
-  color: rgba(255,255,255,0.75);
-  margin-bottom: 32px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.8);
+  padding-bottom: 24px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(255,255,255,0.18);
 }
 
 /* Overlapping hero stage: heading / portrait / heading, badges pinned to the portrait */
@@ -196,58 +202,76 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .hero-line {
-  font-size: clamp(2.4rem, 5.6vw, 4.2rem);
-  font-weight: 700;
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
   margin: 0;
-  max-width: 500px;
+  max-width: 520px;
   position: relative;
   z-index: 2;
 }
 .hero-line-1 { text-align: left; }
 .hero-line-2 { text-align: right; margin-left: auto; }
-.hero-title-accent { color: var(--accent); }
+.hero-title-accent { color: #fff; }
 
 .hero-portrait-wrap {
   position: absolute;
   left: 50%;
   top: -8px;
   transform: translateX(-50%);
-  width: min(46vw, 300px);
+  width: min(40vw, 260px);
   z-index: 1;
 }
-.hero-portrait { filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4)); }
+.hero-portrait {
+  aspect-ratio: 4 / 5;
+  border-radius: 50% / 44%;
+  overflow: hidden;
+  filter: drop-shadow(0 24px 44px rgba(0,0,0,0.45));
+}
+.hero-portrait img { width: 100%; height: 100%; object-fit: cover; }
 
 .hero-chip {
   position: absolute;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 13px 18px;
+  gap: 14px;
+  padding: 16px 22px;
   border-radius: 14px;
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 0.88rem;
-  box-shadow: 0 14px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.35);
   white-space: nowrap;
   z-index: 3;
 }
 .hero-chip-strategy {
-  left: -14%;
-  bottom: 14%;
+  left: -34%;
+  bottom: 10%;
   background: var(--teal);
   color: #fff;
 }
-.badge-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--teal-light); flex-shrink: 0; }
+.badge-dot {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  background: var(--teal-light);
+  flex-shrink: 0;
+}
 .hero-chip-agency {
-  right: -18%;
-  top: 4%;
+  right: -30%;
+  top: 2%;
   background: #fff;
   color: var(--navy);
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 10px;
 }
-.badge-bar { width: 100%; height: 5px; border-radius: 3px; background: var(--accent); }
+.badge-bar { width: 100%; height: 8px; border-radius: 3px; background: var(--accent); }
+.hero-chip-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.15;
+}
 
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 36px; position: relative; z-index: 2; }
 
@@ -333,28 +357,40 @@ img, svg { display: block; max-width: 100%; }
 .stage-card {
   position: relative;
   border-radius: var(--radius);
-  padding: 28px;
-  min-height: 280px;
+  min-height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   color: #fff;
   overflow: hidden;
+  background: linear-gradient(155deg, #12403a 0%, #0b1220 100%);
 }
-.stage-art { position: absolute; top: 24px; right: 24px; width: 80px; opacity: 0.9; }
+.stage-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.stage-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(6,12,17,0.92) 0%, rgba(6,12,17,0.35) 55%, rgba(6,12,17,0) 80%);
+  z-index: 1;
+}
+.stage-caption { position: relative; z-index: 2; padding: 28px; }
 .stage-number {
   font-family: var(--font-display);
   font-size: 0.85rem;
   font-weight: 700;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.7);
+  display: block;
   margin-bottom: 60px;
 }
 .stage-card h3 { font-size: 1.2rem; margin-bottom: 8px; }
 .stage-card p { font-size: 0.9rem; color: rgba(255,255,255,0.82); margin: 0; }
-
-.stage-1 { background: linear-gradient(155deg, #12403a 0%, #0b1220 100%); }
-.stage-2 { background: linear-gradient(155deg, #2a5f7a 0%, #0b1220 100%); }
-.stage-3 { background: linear-gradient(155deg, #3a3423 0%, #0b1220 100%); }
 
 /* Global band -------------------------------------------------------------- */
 
@@ -454,15 +490,10 @@ img, svg { display: block; max-width: 100%; }
   width: 220px;
   height: 260px;
   border-radius: 50% / 45%;
+  overflow: hidden;
   background: linear-gradient(155deg, var(--teal) 0%, var(--navy) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.9);
-  font-family: var(--font-display);
-  font-size: 4rem;
-  font-weight: 700;
 }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 .about-copy p { color: var(--ink-soft); }
 .about-copy .btn-outline { margin-top: 8px; }
 

@@ -49,6 +49,7 @@
 
   <!-- HERO -->
   <section class="hero" id="top">
+    <img class="hero-bg-img" src="assets/hero-bg.jpg" alt="" aria-hidden="true">
     <div class="container hero-inner">
       <div class="hero-eyebrow">
         <span>No industry too niche. No market too far.</span>
@@ -60,31 +61,14 @@
 
         <div class="hero-portrait-wrap">
           <div class="hero-portrait">
-            <svg viewBox="0 0 220 260" aria-hidden="true">
-              <defs>
-                <radialGradient id="portraitGlow" cx="50%" cy="35%" r="65%">
-                  <stop offset="0%" stop-color="#fff3d6" stop-opacity="0.35"/>
-                  <stop offset="100%" stop-color="#fff3d6" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <ellipse cx="110" cy="130" rx="108" ry="128" fill="url(#portraitGlow)"/>
-              <ellipse cx="110" cy="130" rx="104" ry="124" fill="none" stroke="rgba(255,214,140,0.5)" stroke-width="1.5"/>
-              <path d="M62 214 C62 158 82 132 110 132 C138 132 158 158 158 214" fill="none" stroke="rgba(255,224,170,0.85)" stroke-width="3"/>
-              <circle cx="110" cy="92" r="34" fill="none" stroke="rgba(255,224,170,0.9)" stroke-width="3"/>
-              <path d="M84 66 L92 40 L104 58 L110 36 L116 58 L128 40 L136 66" fill="none" stroke="#e2b04a" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
-              <circle cx="92" cy="41" r="3" fill="#e2b04a"/>
-              <circle cx="110" cy="37" r="3" fill="#e2b04a"/>
-              <circle cx="128" cy="41" r="3" fill="#e2b04a"/>
-              <path d="M40 150 C30 120 42 95 62 84" fill="none" stroke="rgba(255,224,170,0.4)" stroke-width="2"/>
-              <path d="M180 150 C190 120 178 95 158 84" fill="none" stroke="rgba(255,224,170,0.4)" stroke-width="2"/>
-            </svg>
+            <img src="assets/hero-portrait.jpg" alt="A knight being crowned, representing turning ambition into an empire">
           </div>
           <div class="hero-chip hero-chip-strategy">
             <span class="badge-dot"></span>
-            Marketing Strategy
+            <span class="hero-chip-label">Marketing<br>Strategy</span>
           </div>
           <div class="hero-chip hero-chip-agency">
-            Marketing Agency
+            <span class="hero-chip-label">Marketing<br>Agency</span>
             <span class="badge-bar"></span>
           </div>
         </div>
@@ -180,31 +164,31 @@
       </div>
 
       <div class="stage-grid">
-        <article class="stage-card stage-1">
-          <div class="stage-art" aria-hidden="true">
-            <svg viewBox="0 0 100 100"><circle cx="50" cy="45" r="16" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="2.5"/><circle cx="50" cy="45" r="6" fill="rgba(255,255,255,0.85)"/><path d="M50 6 V16 M50 74 V84 M11 45 H21 M79 45 H89" stroke="rgba(255,255,255,0.55)" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <article class="stage-card">
+          <img class="stage-img" src="assets/stage-strategy.jpg" alt="" onerror="this.remove()">
+          <div class="stage-caption">
+            <span class="stage-number">01</span>
+            <h3>Strategy Session</h3>
+            <p>We start by understanding your business, your market, and what's actually holding growth back.</p>
           </div>
-          <span class="stage-number">01</span>
-          <h3>Strategy Session</h3>
-          <p>We start by understanding your business, your market, and what's actually holding growth back.</p>
         </article>
 
-        <article class="stage-card stage-2">
-          <div class="stage-art" aria-hidden="true">
-            <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/><circle cx="50" cy="50" r="18" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/><circle cx="50" cy="50" r="6" fill="rgba(255,255,255,0.85)"/><path d="M50 50 L82 22" stroke="rgba(255,255,255,0.9)" stroke-width="2.5" stroke-linecap="round"/><path d="M82 22 L70 22 M82 22 L82 34" stroke="rgba(255,255,255,0.9)" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <article class="stage-card">
+          <img class="stage-img" src="assets/stage-clarity.jpg" alt="">
+          <div class="stage-caption">
+            <span class="stage-number">02</span>
+            <h3>Clarity &amp; Direction</h3>
+            <p>You get a clear plan: what we're doing, why, and what to expect &mdash; before any work begins.</p>
           </div>
-          <span class="stage-number">02</span>
-          <h3>Clarity &amp; Direction</h3>
-          <p>You get a clear plan: what we're doing, why, and what to expect &mdash; before any work begins.</p>
         </article>
 
-        <article class="stage-card stage-3">
-          <div class="stage-art" aria-hidden="true">
-            <svg viewBox="0 0 100 100"><rect x="26" y="30" width="48" height="32" rx="3" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="2.5"/><path d="M26 30 L50 14 L74 30" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5" stroke-linejoin="round"/><path d="M38 70 H62" stroke="rgba(255,255,255,0.55)" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <article class="stage-card">
+          <img class="stage-img" src="assets/stage-execution.png" alt="">
+          <div class="stage-caption">
+            <span class="stage-number">03</span>
+            <h3>Execution</h3>
+            <p>We run it, report on it, and adjust &mdash; so results keep compounding, not just launching.</p>
           </div>
-          <span class="stage-number">03</span>
-          <h3>Execution</h3>
-          <p>We run it, report on it, and adjust &mdash; so results keep compounding, not just launching.</p>
         </article>
       </div>
     </div>
@@ -280,8 +264,8 @@
   <!-- ABOUT -->
   <section class="section section-about" id="about">
     <div class="container about-inner">
-      <div class="about-photo" aria-hidden="true">
-        <span>Y</span>
+      <div class="about-photo">
+        <img src="assets/about-yasmin.png" alt="Yasmin, founder of Veloxitas Agency">
       </div>
       <div class="about-copy">
         <p class="eyebrow">About the project manager</p>
