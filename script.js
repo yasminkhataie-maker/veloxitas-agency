@@ -1,3 +1,13 @@
+// Header goes solid once the page scrolls past the transparent hero band
+const siteHeader = document.querySelector('.site-header');
+if (siteHeader) {
+  const updateHeader = () => {
+    siteHeader.classList.toggle('is-scrolled', window.scrollY > 24);
+  };
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, { passive: true });
+}
+
 // Mobile menu toggle
 const navToggle = document.querySelector('.nav-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
