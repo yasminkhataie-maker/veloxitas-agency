@@ -1,0 +1,94 @@
+<svg viewBox="0 0 841.33 88.52" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .l {
+        fill: url(#k);
+      }
+
+      .m {
+        fill: url(#c);
+      }
+
+      .n {
+        fill: url(#d);
+      }
+
+      .o {
+        mix-blend-mode: overlay;
+        opacity: .56;
+      }
+
+      .p {
+        fill: url(#h);
+      }
+
+      .q {
+        fill: url(#j);
+      }
+
+      .r {
+        fill: none;
+      }
+
+      .s {
+        fill: url(#g);
+      }
+
+      .t {
+        isolation: isolate;
+      }
+
+      .u {
+        clip-path: url(#b);
+      }
+
+      .v {
+        fill: url(#e);
+      }
+
+      .w {
+        fill: url(#i);
+      }
+
+      .x {
+        fill: url(#f);
+      }
+    </style>
+    <clipPath id="b">
+      <rect height="1098.47" width="1098.47" y="-1716" x="-1257.68" class="r"></rect>
+    </clipPath>
+    <linearGradient gradientUnits="userSpaceOnUse" y2="82.67" x2="426.36" y1="1.47" x1="426.36" data-name="New Gradient Swatch" id="c">
+      <stop stop-color="#c09672" offset="0"></stop>
+      <stop stop-color="#f0e0c8" offset=".51"></stop>
+      <stop stop-color="#c09672" offset="1"></stop>
+    </linearGradient>
+    <linearGradient xlink:href="#c" y2="82.67" x2="31.25" y1="1.47" x1="31.25" data-name="New Gradient Swatch" id="d"></linearGradient>
+    <linearGradient xlink:href="#c" y2="82.67" x2="129.03" y1="1.47" x1="129.03" data-name="New Gradient Swatch" id="e"></linearGradient>
+    <linearGradient xlink:href="#c" y2="82.67" x2="227.78" y1="1.47" x1="227.78" data-name="New Gradient Swatch" id="f"></linearGradient>
+    <linearGradient xlink:href="#c" y2="82.67" x2="326.63" y1="1.47" x1="326.63" data-name="New Gradient Swatch" id="g"></linearGradient>
+    <linearGradient xlink:href="#c" y2="82.67" x2="524.73" y1="1.47" x1="524.73" data-name="New Gradient Swatch" id="h"></linearGradient>
+    <linearGradient xlink:href="#c" y2="82.67" x2="615.83" y1="1.47" x1="615.83" data-name="New Gradient Swatch" id="i"></linearGradient>
+    <linearGradient xlink:href="#c" y2="82.67" x2="715.77" y1="1.47" x1="715.77" data-name="New Gradient Swatch" id="j"></linearGradient>
+    <linearGradient xlink:href="#c" y2="82.67" x2="811.97" y1="1.47" x1="811.97" data-name="New Gradient Swatch" id="k"></linearGradient>
+  </defs>
+  <g class="t">
+    <g data-name="Layer 1" id="a">
+      <g class="o">
+        <g class="u">
+          <image xlink:href="../../../../Provided Materials/samara-doole-peaTniZsUQs-unsplash.jpg" transform="translate(953.21 3020.86) rotate(-180) scale(.11)" height="42300" width="28200"></image>
+        </g>
+      </g>
+      <g>
+        <path d="M450.73,77.73c-25.57,26.92-71.91-.27-52.83-40.06,6.5-13.55,17.25-27.26,27.97-37.67,2.13-.37,13.5,13.83,15.32,16.29,12.9,17.4,27.95,42.05,9.54,61.43Z" class="m"></path>
+        <path d="M0,6.28h8.46v33.75h45.58V6.28h8.46v75.96h-8.46v-34.62H8.46v34.62H0V6.28Z" class="n"></path>
+        <path d="M124.79,50.99L96.15,6.28h9.12l23.77,37.33,23.77-37.33h9.12l-28.65,44.71v31.25h-8.46v-31.25Z" class="v"></path>
+        <path d="M195.55,6.28h25.39c23.55,0,39.07,17.26,39.07,37.98s-15.52,37.98-39.07,37.98h-25.39V6.28ZM219.53,74.76c19.86,0,32.01-13.89,32.01-30.49s-12.15-30.49-32.01-30.49h-15.63v60.99h15.63Z" class="x"></path>
+        <path d="M297.12,6.28h33.53c15.3,0,25.5,9.66,25.5,21.6,0,10.96-8.36,19.64-20.94,21.49l17.36,32.88h-9.12l-17.15-32.56h-20.73v32.56h-8.46V6.28ZM329.78,42.31c11.18,0,17.91-6.4,17.91-14.43s-6.73-14.22-17.91-14.22h-24.2v28.65h24.2Z" class="s"></path>
+        <path d="M497.65,6.28h18.67v59.69h35.49v16.28h-54.15V6.28Z" class="p"></path>
+        <path d="M582.51,50.99V6.28h18.67v44.6c0,10.63,5.32,16.6,14.65,16.6s14.65-5.97,14.65-16.6V6.28h18.67v44.71c0,19.97-12.91,32.77-33.32,32.77s-33.32-12.81-33.32-32.77Z" class="w"></path>
+        <path d="M704.59,43.29l-24.09-37.01h21.49l13.78,22.14,13.67-22.14h21.6l-24.09,37.01,25.39,38.96h-21.81l-14.76-23.87-14.87,23.87h-21.7l25.39-38.96Z" class="q"></path>
+        <path d="M782.62,6.28h57.84v16.17h-39.18v13.13h37.77v16.17h-37.77v14.33h40.04v16.17h-58.71V6.28Z" class="l"></path>
+      </g>
+    </g>
+  </g>
+</svg>
