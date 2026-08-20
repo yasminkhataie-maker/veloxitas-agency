@@ -1,3 +1,14 @@
+// Logo marquee — clone the track once so the CSS animation (which
+// shifts exactly one copy-width via translateX(-50%)) loops seamlessly,
+// instead of hand-duplicating ~30 <li> logos in the HTML.
+const logoTrack = document.getElementById('logo-track');
+if (logoTrack) {
+  const clone = logoTrack.cloneNode(true);
+  clone.removeAttribute('id');
+  clone.setAttribute('aria-hidden', 'true');
+  logoTrack.parentElement.appendChild(clone);
+}
+
 // Mobile menu toggle
 const navToggle = document.querySelector('.nav-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
