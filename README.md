@@ -22,6 +22,6 @@ No build step — plain HTML/CSS/JS. Open `index.html` directly in a browser, or
 
 ## To customize
 
-- **Yasmin's photo**: replace the placeholder monogram in the "About" section (`.about-photo` in `index.html` / `styles.css`) with a real photo, e.g. `assets/yasmin.jpg`.
-- **Contact email**: update the `mailto:hello@veloxitas.agency` links in `index.html`.
-- **Client logos**: currently shown as text wordmarks in the trust bar; swap for real logo image files in `assets/` if preferred.
+- **Contact email**: update the `mailto:yasmin@veloxitas.com` links in `index.html`.
+- **Book a Call**: the header, mobile menu, and closing-band buttons link out to Calendly — update the URL in `index.html` if it changes.
+- **Client logos**: real logo files live in `assets/logo-*`, listed in the `#logo-track` list in `index.html`.
