@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="ui-chart-small" aria-hidden="true" role="none" data-supported-dps="48x48" width="48" height="48">
+  <path fill="#fff" d="M2 8h44v38H2z"/>
+  <path fill="#dde7f1" d="M46 8v38H2V8H0v40h48V8h-2z"/>
+  <path d="M48 2.55V8H0V2.55A2.58 2.58 0 012.61 0h42.77A2.58 2.58 0 0148 2.54z" fill="#9db3c8"/>
+  <circle cx="4" cy="4" r="2" fill="#fff"/>
+  <path fill="#c0d1e2" d="M32 13h12v28H32z"/>
+  <path fill="#e7a33e" d="M18 20h12v21H18z"/>
+  <path fill="#f8c77e" d="M4 27h12v14H4z"/>
+</svg>
