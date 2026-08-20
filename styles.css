@@ -100,10 +100,8 @@ img, svg { display: block; max-width: 100%; }
 /* Header ------------------------------------------------------------------ */
 
 .site-header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 100;
   background: linear-gradient(90deg, #352223 0%, #24292d 50%, #095650 100%);
 }
@@ -169,7 +167,7 @@ img, svg { display: block; max-width: 100%; }
   overflow: hidden;
   color: #fff;
   background: #0b1220;
-  padding: 157px 0 150px;
+  padding: 72px 0 150px;
 }
 
 .hero-bg-img {
@@ -508,9 +506,12 @@ img, svg { display: block; max-width: 100%; }
 .about-photo {
   position: sticky;
   top: 120px;
-  width: 220px;
-  height: 260px;
-  border-radius: 50% / 45%;
+  width: 260px;
+  height: 429px;
+  /* Same capsule construction as the hero portrait: a fixed radius
+     bigger than half the width clamps to a semicircle top/bottom
+     while the sides stay straight. Matches Figma's 371x612 shape. */
+  border-radius: 140px;
   overflow: hidden;
   background: linear-gradient(155deg, var(--teal) 0%, var(--navy) 100%);
 }
@@ -625,6 +626,6 @@ img, svg { display: block; max-width: 100%; }
 @media (max-width: 560px) {
   .services-grid { grid-template-columns: 1fr; }
   .section { padding: 64px 0; }
-  .hero { padding: 110px 0 60px; }
+  .hero { padding: 48px 0 60px; }
   .hero-eyebrow { flex-direction: column; gap: 8px; }
 }
