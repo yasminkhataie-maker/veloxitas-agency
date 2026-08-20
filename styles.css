@@ -160,6 +160,20 @@ img, svg { display: block; max-width: 100%; }
 .mobile-menu .btn { margin-top: 10px; justify-content: center; }
 .mobile-menu.is-open { display: flex; }
 
+.promo-bar {
+  background: var(--teal);
+  text-align: center;
+  padding: 9px 16px;
+}
+.promo-bar-link {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.promo-bar-link:hover { color: rgba(255,255,255,0.8); }
+
 /* Hero ---------------------------------------------------------------- */
 
 .hero {
@@ -302,7 +316,7 @@ img, svg { display: block; max-width: 100%; }
 
 /* Section shells ----------------------------------------------------- */
 
-.section { padding: 96px 0; scroll-margin-top: 100px; }
+.section { padding: 96px 0; scroll-margin-top: 138px; }
 .section-title { font-size: clamp(1.6rem, 3vw, 2.3rem); }
 .section-title.center { text-align: center; }
 .section-lead { color: var(--ink-soft); font-size: 1.05rem; max-width: 640px; }
