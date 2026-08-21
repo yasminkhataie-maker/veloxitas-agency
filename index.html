@@ -294,7 +294,11 @@
         <h2 class="section-title">Tell us about the project</h2>
         <p class="section-lead">A few lines is enough to start. We'll reply with next steps, not a sales script.</p>
       </div>
-      <form class="contact-form" action="mailto:yasmin@veloxitas.com" method="post" enctype="text/plain">
+      <form class="contact-form" id="contact-form" action="https://formsubmit.co/yasmin@veloxitas.com" method="POST">
+        <input type="hidden" name="_subject" value="New message from the Veloxitas website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <label for="form-name">Name</label>
           <input id="form-name" name="name" type="text" placeholder="Your name" required>
@@ -308,6 +312,7 @@
           <textarea id="form-message" name="message" rows="5" placeholder="What are you working on?" required></textarea>
         </div>
         <button type="submit" class="btn btn-dark">Send message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
       </form>
     </div>
   </section>

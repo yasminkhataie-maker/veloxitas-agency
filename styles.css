@@ -687,6 +687,10 @@ img, svg { display: block; max-width: 100%; }
   border-color: var(--teal);
 }
 .contact-form .btn { align-self: flex-start; }
+.contact-form .btn:disabled { opacity: 0.65; cursor: not-allowed; }
+.form-status { font-size: 0.9rem; font-weight: 600; min-height: 1.2em; margin: 0; }
+.form-status.is-success { color: var(--teal-light); }
+.form-status.is-error { color: #b3413a; }
 
 /* Footer ---------------------------------------------------------------------- */
 

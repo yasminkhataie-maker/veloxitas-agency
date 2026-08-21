@@ -57,6 +57,49 @@ if ('IntersectionObserver' in window) {
   });
 }
 
+// Contact form — submit silently via FormSubmit's AJAX endpoint so the
+// visitor never leaves the page or gets bounced to a local mail client.
+// (Falls back to a normal POST + FormSubmit's own redirect if JS fails.)
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const endpoint = 'https://formsubmit.co/ajax/yasmin@veloxitas.com';
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    formStatus.textContent = '';
+    formStatus.classList.remove('is-error', 'is-success');
+
+    fetch(endpoint, {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: new FormData(contactForm),
+    })
+      .then((response) => {
+        if (!response.ok) throw new Error('Request failed');
+        return response.json();
+      })
+      .then(() => {
+        formStatus.textContent = "Thanks — your message is on its way. We'll reply soon.";
+        formStatus.classList.add('is-success');
+        contactForm.reset();
+      })
+      .catch(() => {
+        formStatus.textContent = "Something went wrong. Please try again, or email yasmin@veloxitas.com directly.";
+        formStatus.classList.add('is-error');
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send message';
+      });
+  });
+}
+
 // Footer year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
